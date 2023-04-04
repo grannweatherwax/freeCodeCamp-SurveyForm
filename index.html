@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Programming self-assessment</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main>
+    <section class="intro">
+    <h1 id="title">Programming self-assessment form</h1>
+    <p id="description">Use this form to reflect on your skill level as a programmer</p>
+    </section>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name"  id="name-label">Name: <input id="name" type="text" placeholder="enter your name" required/></label>
+        <label for="email" id="email-label">email address: <input id="email" type="email" placeholder="enter your email address" required/>
+        </label>
+        <label for="number" id="number-label"> Age (Optional): <input id="number" type="number" min="13" max="120"placeholder="enter your age" />
+        </label>
+        <label for="dropdown" id="current-level">My skill level is: 
+          <select id="dropdown" name "my-level">
+            <option value="">(select one)</option>
+            <option value="1">Nothing yet</option>
+            <option value="2">Beginner</option>
+            <option value="3">Intermediate</option>
+            <option value="4">Advanced</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+        <label>I am a:</label>
+        <label for="hobby"><input id="hobby" type="radio" name="user-type" class="inline" value="hobby"/> Hobbyist</label>
+        <label for="student"><input id="student" type="radio" name="user-type" class="inline" value="student"/> Student</label>
+        <label for="job-seeker"><input id="job-seeker" type="radio" name="user-type" class="inline" value="job-seeker"/> Job Seeker</label>
+      </fieldset>
+      <fieldset>
+        <label>I have/want experience programming for: </label>
+        <label><input id="prog-type" type="checkbox" name="prg-type" value="web" class="inline" /> Web</label>
+        <label><input id="prog-type" type="checkbox" name="prg-type" value="ios" class="inline" /> iOS</label>
+        <label><input id="prog-type" type="checkbox" name="prg-type" value="android" class="inline" /> Android</label>
+        <label><input id="prog-type" type="checkbox" name="prg-type" value="windows" class="inline" /> Windows</label>
+        <label><input id="prog-type" type="checkbox" name="prg-type" value="macos" class="inline" /> MacOS</label>
+        <label><input id="prog-type" type="checkbox" name="prg-type" value="linux" class="inline" /> Linux</label>
+      </fieldset>
+      <fieldset>
+        <label for="motivation">What inspired you to want to learn programming? <textarea id="motivation" type="textarea" rows="5" cols="30" placeholder="I like to know how things work...">
+        </textarea>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </main>
+</body>
+</html>
